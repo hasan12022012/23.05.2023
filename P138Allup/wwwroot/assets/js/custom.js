@@ -17,7 +17,7 @@
 
         fetch('product/search' + categoryId + '?search=' + search)
             .then(res => {
-                return res.json();
+                return res.text();
             }).then(date => {
                 let liItem = "";
 
